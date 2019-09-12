@@ -1,2 +1,4 @@
 // src/js/constants/action-types.js
-export const ADD_ARTICLE = "ADD_ARTICLE";
+const ADD_ARTICLE = "ADD_ARTICLE";
+const FOUND_BAD_WORD = "FOUND_BAD_WORD";
+export {ADD_ARTICLE,FOUND_BAD_WORD};

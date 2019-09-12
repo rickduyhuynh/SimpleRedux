@@ -6,6 +6,13 @@ import { addArticle } from "../actions/index";
 
 function mapDispatchToProps(dispatch) {
   return {
+    /*
+    allows the line this.props.addArticle to work by mapping
+    the dispatch function of addarticle to props.
+    So when this.props.addArticle is called with article parameter
+    
+    mapdispatchtoprops will actually call dispatch(addArticle(article)
+    */
     addArticle: article => dispatch(addArticle(article))
   };
 }
